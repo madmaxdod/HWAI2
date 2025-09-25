@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="HomeworkIntDes2" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        /* Basic styles to mimic the retro, text-heavy aesthetic */
+        body {
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: #333;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        a {
+            color: rgb(0, 0, 238); /* Classic link blue */
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #000;
+        }
+
+        /* Container to center content and limit width, like the original site */
+        .container {
+            max-width: 960px; /* Increased width to accommodate two columns */
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            display: flex;
+            gap: 40px;
+        }
+
+        /* Sidebar styling for the new links */
+        .sidebar {
+            flex: 0 0 200px;
+            padding-top: 50px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #555;
+        }
+
+        .sidebar ul li a:hover {
+            color: #000;
+        }
+
+        /* Header and navigation styling */
+        .header {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: normal;
+            margin: 0;
+            text-transform: uppercase;
+        }
+
+        .header h1 a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            display: flex;
+            justify-content: center;
+            font-size: 0.9em;
+        }
+
+        .nav-menu li a {
+            text-decoration: none;
+            color: #555;
+            text-transform: uppercase;
+            padding: 0 10px;
+        }
+
+        .nav-menu li:not(:last-child)::after {
+            content: "|";
+            color: #ccc;
+        }
+
+        /* Main content styling */
+        .main-content {
+            flex-grow: 1;
+            padding-top: 50px;
+        }
+
+        .review-content {
+            font-size: 1.1em;
+        }
+
+        h2 {
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            margin-top: 30px;
+        }
+
+        .artist-album {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        blockquote {
+            font-style: italic;
+            border-left: 2px solid #ccc;
+            padding-left: 15px;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .content-image {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #ccc;
+            text-align: center;
+            font-size: 0.8em;
+            color: #777;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                padding-top: 0;
+                order: 1;
+                text-align: center;
+            }
+
+            .main-content {
+                order: 2;
+                padding-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="sidebar">
+        <ul>
+            <li><a href="#urgency">Urgency</a></li>
+            <li><a href="#misdirection">Misdirection</a></li>
+            <li><a href="#hidden-ads">Hidden Ads</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header class="header">
+            <h1><a href="#">Dark Patterns</a></h1>
+        </header>
+
+        <main class="review-content">
+            <!-- New sections for images -->
+            <div id="urgency">
+                <h3>Urgency</h3>
+                <p>Here is an example of manufactured urgency. Many of these postings have already been on the site for weeks at a time, but the relevance of it being "new" allows the viewer to think they need to act now. </p>
+                <img src="/workspaces/codespaces-blank/images/Urgency.png" alt="Placeholder image for Urgency" class="content-image">
+            </div>
+
+            <div id="misdirection">
+                <h3>Misdirection</h3>
+                <p>This is a webscam that comes up if you accidentally type "gihub.com" instead of github.com.  </p>
+                <img src="/workspaces/codespaces-blank/images/Misdirection.png" alt="Placeholder image for Misdirection" class="content-image">
+            </div>
+
+            <div id="hidden-ads">
+                <h3>Hidden Ads</h3>
+                <p>This is an example of the garbage ads that come with having an account on almost any online marketplace. These incentivize new experiences and create nonexistant problems. The user has notifications on for the practical use of seeing their deliveries, but that is abused to give unwanted ads.</p>
+                <img src="/workspaces/codespaces-blank/images/HiddenAds.PNG" alt="Placeholder image for Hidden Ads" class="content-image">
+            </div>
+
+        </main>
+    </div>
+</div>
+
+</body>
+</html>
